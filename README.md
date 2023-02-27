@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Todo-App
+This App was created using ReactJS and Bootstrap.
+
 ## Available Scripts
 
 In the project directory, you can run:
