@@ -1,0 +1,144 @@
+/* General style */
+
+body {
+    background: #606c88; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to left,
+        #3f4c6b,
+        #606c88
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to left,
+        #3f4c6b,
+        #606c88
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling The App */
+.wrapper {
+    max-width: 70%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: #ffeeee; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to left,
+        #ddefbb,
+        #ffeeee
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to left,
+        #ddefbb,
+        #ffeeee
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.8);
+}
+
+/* Styling the form */
+.custom-form {
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+}
+
+/* Styling the input and button */
+.input-and-btn {
+    display: flex;
+    padding: 20px;
+    gap: 0.5rem;
+}
+
+/* Styling the todo box */
+.todo-box {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.todo-box .content {
+    display: flex;
+}
+
+.todo-box .content p {
+    margin-top: -6px;
+    margin-left: 6px;
+}
+
+.todo-box span {
+    margin: 0 5px;
+}
+
+/* Styling the delete all button */
+.delete-all {
+    width: 70%;
+}
+
+.actions-box {
+    cursor: pointer;
+}
+
+/* Styling the back button */
+.back-btn {
+    margin-top: 5px;
+    width: 100%;
+}
+
+/* Styling the edit and delete button */
+.done {
+    margin-bottom: 18px;
+}
+
+.btn-sm {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 61em) {
+    .wrapper {
+        width: 75%;
+    }
+
+    .btn {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (max-width: 40em) {
+    .wrapper {
+        max-width: 90%;
+        padding: 20px;
+        font-size: 0.5rem !important;
+    }
+
+    .btn {
+        font-size: 0.5rem !important;
+        padding: 10px;
+    }
+
+    .todo-box {
+        width: 90%;
+    }
+
+    .form-control {
+        padding: 0.1rem 0.4rem !important;
+        font-size: 0.5rem !important;
+    }
+}
